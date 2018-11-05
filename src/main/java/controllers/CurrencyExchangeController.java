@@ -11,6 +11,7 @@ public class CurrencyExchangeController {
     public double vnd;
 
 
+
     @RequestMapping("exchange")
     public String exchange(@RequestParam double usd, @RequestParam double rate, Model model) {
         vnd = usd * rate;
